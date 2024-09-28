@@ -181,6 +181,11 @@ gap: 4px;
   gap: 12px;
 }
 
+#email {
+  color:white;
+  text-decoration: none;
+}
+
 #h11 {
   text-align: center;
   color: white;
