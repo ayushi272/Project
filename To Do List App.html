@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>To do list app</title>
+    <style>
+      body {
+        background-image: url("https://media.istockphoto.com/id/1594072752/video/blue-soft-wave-material.jpg?s=640x640&k=20&c=7cyVE-wS7SuXfPi0CIfFEzXnIGRZjJoMnoFkwOSVXcM=");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .todo-app {
+        margin: auto;
+        margin-top: 80px;
+        width: 600px;
+        background: rgba(255, 255, 255, 0.5);
+        box-shadow: 5px 5px 5px 5px #5eb5c3;
+        padding: 40px 30px 70px;
+        border-radius: 10px;
+      }
+
+      .todo-app h2 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      img {
+        margin-left: 25px;
+      }
+
+      h2 {
+        font-size: 30px;
+        font-family: Consolas;
+      }
+
+      .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #edeef0;
+        border-radius: 30px;
+        padding-left: 20px;
+        margin-bottom: 25px;
+      }
+
+      input {
+        flex: 1;
+        border: none;
+        outline: none;
+        background: transparent;
+        padding: 10px;
+        font-weight: 15px;
+      }
+
+      button {
+        border: none;
+        outline: none;
+        padding: 15px 50px;
+        background: #0092a8;
+        color: #fff;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 15px;
+      }
+      .audio-icon {
+        width: 24px;
+        height: 24px;
+      }
+      .audio-assist-btn {
+        padding: 2px;
+        background-color: white;
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="todo-app">
+      <h2>
+        Personal To-do List
+        <img
+          src="https://cdn.pixabay.com/photo/2022/05/22/17/22/to-do-7214069_1280.png"
+          width="100"
+          height="120"
+        />
+      </h2>
+      <div class="row">
+        <input type="text" id="input-box" placeholder="Add your text..." />
+        <button class="audio-assist-btn">
+          <img
+            src="https://www.shutterstock.com/image-vector/voice-search-microphone-icon-vector-260nw-1187027503.jpg"
+            alt="audio assist"
+            class="audio-icon"
+          />
+        </button>
+        <button>Add</button>
+      </div>
+      <input type="checkbox" /> Task 1
+      <br />
+      <br />
+      <input type="checkbox" /> Task 2
+      <br />
+      <br />
+      <input type="checkbox" /> Task 3
+    </div>
+  </body>
+</html>

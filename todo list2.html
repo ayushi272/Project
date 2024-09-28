@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To-Do List App</title>
+
+    <style>
+      #haha {
+        color: black;
+        font-size: 36px;
+        margin-top: 70px;
+        margin-left: 20px;
+        text-align: center;
+        font-family: Bahnschrift SemiBold;
+      }
+
+      #list {
+        background-color: transparent;
+        color: #0985d1;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-left: 150px;
+        margin-top: 30px;
+      }
+
+      #list:hover {
+        font-size: 100%;
+        box-shadow: 5px 5px #c7e6fa;
+        background-color: #91cbf0;
+        color: white;
+      }
+
+      #grp {
+        background-color: transparent;
+        border: none;
+        color: #0985d1;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        text-align: center;
+        font-size: 18px;
+        padding: 10px 15px;
+        font-size: 20px;
+        border-radius: 8px;
+        margin-left: 30px;
+      }
+
+      #grp:hover {
+        font-size: 100%;
+        box-shadow: 5px 5px #c7e6fa;
+        background-color: #91cbf0;
+        color: white;
+      }
+
+      #para {
+        color: #79797b;
+        font-size: 25px;
+        margin-left: 20px;
+        text-align: center;
+      }
+
+      #signin {
+        background-color: transparent;
+        border: 2px solid #0985d1;
+        color: #0985d1;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        border-radius: 50px;
+        cursor: pointer;
+        margin-left: 500px;
+        margin-top: 30px;
+      }
+
+      #signin:hover {
+        background-color: #0985d1;
+        color: white;
+      }
+
+      #img {
+        float: right;
+        border-radius: 40%;
+        width: 450px;
+        height: 350px;
+        margin-right: 10px;
+        margin-top: 40px;
+        border: none;
+        box-shadow: 6px 6px 6px 6px #c7e6fa;
+      }
+
+      body {
+        background-color: #deeef0;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        margin: 0;
+      }
+
+      #contact-info {
+        background-color: #0985d1;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        height: 60vh;
+        margin: auto;
+        margin-top: 100px;
+      }
+
+      h2 {
+        text-align: center;
+        color: white;
+      }
+
+      p {
+        text-align: center;
+        color: white;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        margin: 10px 0;
+        color: white;
+      }
+
+      #scroll_top {
+        position: fixed;
+        right: 20px;
+        bottom: 30px;
+        background-color: transparent;
+        color: #0985d1;
+        border-radius: 20px;
+        border: none;
+        font-size: 16px;
+        box-shadow: 1px 1px 5px 5px #c7e6fa;
+        padding: 5px;
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 200px;
+      }
+
+      .description {
+        margin-top: 28px;
+      }
+
+      .borderDiv {
+        width: 100px;
+        height: 5px;
+        background-color: red;
+        border-radius: 4px;
+        margin-top: 10px;
+      }
+
+      .title {
+        font-size: 32px;
+        font-weight: 600;
+      }
+
+      .features {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: space-evenly;
+        margin-top: 40px;
+        max-width: 1100px;
+      }
+
+      .feature {
+        height: 230px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2px;
+        box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        justify-content: space-evenly;
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+
+      .img {
+        height: 60px;
+        width: 60px;
+        border-radius: 100%;
+        background-color: bisque;
+      }
+
+      i {
+        line-height: 20px;
+      }
+
+      .feature span {
+        font-weight: 600;
+        font-size: 18px;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+  <body id="hello">
+    <a href="file:///C:/Users/lenovo/Desktop/To%20Do%20List%20App.html">
+      <button id="list" type="button">Your Lists</button>
+    </a>
+
+    <a
+      href="https://66e1178a606808844c8e6140--flourishing-maamoul-51eacd.netlify.app/"
+    >
+      <button id="grp" type="button">Make Groups</button>
+    </a>
+
+    <a href="#contact-info">
+      <button id="grp" type="button">Contact Us</button>
+    </a>
+
+    <a href="file:///C:/Users/lenovo/Desktop/logiiiin.htm">
+      <button id="signin" type="button"><b>Sign-in</b></button>
+    </a>
+
+    <img
+      src="https://cdni.iconscout.com/illustration/premium/thumb/woman-creating-to-do-list-illustration-download-in-svg-png-gif-file-formats--create-time-management-pack-business-illustrations-6451368.png?f=webp"
+      id="img"
+    />
+
+    <div id="haha">
+      <h1>
+        A simple to do list <br />
+        to manage it all
+      </h1>
+    </div>
+
+    <p id="para">
+      Introducing our intuitive To-Do List Manager App, <br />
+      designed to help you conquer your daily tasks with ease.
+    </p>
+
+    <div class="wrapper">
+      <span class="title">Key Features</span>
+      <div class="borderDiv"></div>
+      <i class="description"
+        >Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+        Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</i
+      >
+      <div class="features">
+        <div class="feature">
+          <div class="img"></div>
+          <span>Design</span>
+          <i
+            >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magn</i
+          >
+        </div>
+        <div class="feature">
+          <div class="img"></div>
+          <span>Design</span>
+          <i
+            >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magn</i
+          >
+        </div>
+        <div class="feature">
+          <div class="img"></div>
+          <span>Design</span>
+          <i
+            >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magn</i
+          >
+        </div>
+        <div class="feature">
+          <div class="img"></div>
+          <span>Design</span>
+          <i
+            >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magn</i
+          >
+        </div>
+        <div class="feature">
+          <div class="img"></div>
+          <span>Design</span>
+          <i
+            >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magn</i
+          >
+        </div>
+        <div class="feature">
+          <div class="img"></div>
+          <span>Design</span>
+          <i
+            >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magn</i
+          >
+        </div>
+      </div>
+    </div>
+
+    <div id="contact-info">
+      <h2>Contact Us</h2>
+      <p>If you have any questions, feel free to reach out to us!</p>
+      <ul>
+        <li><strong>Email:</strong> info@example.com</li>
+        <li><strong>Phone:</strong> (123) 456-7890</li>
+        <li><strong>Address:</strong> 123 Main Street, City, Country</li>
+      </ul>
+
+      <a href="#hello">
+        <button id="scroll_top" type="button">
+          <img
+            src="C:\Users\lenovo\Downloads\icons8-arrow-up-30 (1).png"
+            style=""
+          />
+          <p>Scroll</p>
+        </button>
+      </a>
+    </div>
+  </body>
+</html>
